@@ -86,10 +86,10 @@ Python library
 
   Code:
   
-    import emotiv
+    import emokit.emotiv as h
 
     if __name__ == "__main__":
-      with emotiv.Emotiv() as headset:
+      with h.Emotiv() as headset:
           while True:
             packet = headset.dequeue()
             if packet is not None:
